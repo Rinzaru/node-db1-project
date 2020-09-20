@@ -24,9 +24,6 @@
     or City = 'London'
     or Country = 'Brazil'
 
-    select * from Customers
-    where City in ('London', 'Madrid')
-    or Country in ('Brazil')
 -- Add a customer record for "The Shire", the contact name is "Bilbo Baggins" the address is -"1 Hobbit-Hole" in "Bag End", postal code "111" and the country is "Middle Earth"
 
     insert into Customers ('CustomerName', 'ContactName', 'Address', 'City', 'PostalCode', 'Country')
@@ -36,7 +33,7 @@
 
     update Customers
     set PostalCode = '11122'
-    where CustomerID = 93;
+    where CustomerID = 92;
 
 -- (Stretch) Find a query to discover how many different cities are stored in the Customers table. Repeats should not be double counted
 
